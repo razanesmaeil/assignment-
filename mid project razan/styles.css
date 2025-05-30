@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.tab-button {
+  padding: 15px 25px;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: #2196F3;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.table-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.card-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background: #e3f2fd;
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(50% - 10px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 2px;
+}
